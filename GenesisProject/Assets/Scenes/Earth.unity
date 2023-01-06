@@ -216,8 +216,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1206206003}
   - component: {fileID: 1206206002}
-  - component: {fileID: 1206206000}
   - component: {fileID: 1206206001}
+  - component: {fileID: 1206206000}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed3479277aed144e8bb621d88c78657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
+  Speed: 4.5
 --- !u!50 &1206206001
 Rigidbody2D:
   serializedVersion: 4
