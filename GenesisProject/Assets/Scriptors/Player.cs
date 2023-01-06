@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class Player : MonoBehaviour
         
     }
 
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
@@ -22,5 +28,12 @@ public class Player : MonoBehaviour
         position.x = position.x + Speed * horizontal * Time.deltaTime;
         position.y = position.y + Speed * vertical * Time.deltaTime;
         transform.position = position;
+
+        if (Input.GetKeyDown("escape"))
+        {
+            LoadScene("Menu");
+        }
     }
+
+    
 }

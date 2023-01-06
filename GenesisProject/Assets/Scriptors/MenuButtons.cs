@@ -21,6 +21,7 @@ public class MenuButtons : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
     public void Exit()
     {
         Application.Quit();
