@@ -24,19 +24,14 @@ public class Player : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
+        Vector2 position = transform.position;
+        position.x = position.x + Speed * horizontal * Time.deltaTime;
+        position.y = position.y + Speed * vertical * Time.deltaTime;
+        transform.position = position;
+
         if (Input.GetKeyDown("escape"))
         {
             LoadScene("Menu");
         }
     }
-
-    void FixedUpdate()
-    {
-        Vector2 position = transform.position;
-        position.x = position.x + Speed * horizontal * Time.deltaTime;
-        position.y = position.y + Speed * vertical * Time.deltaTime;
-        transform.position = position;
-    }
-
-    
 }
