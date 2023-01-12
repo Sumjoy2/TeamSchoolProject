@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 513c59f412b91944ca266d4a3cf1714d
   - enabled: 1
+    path: Assets/Scenes/SplashScren.unity
+    guid: caee159e5531c2c4ba6b00e8e1912a7b
+  - enabled: 1
     path: Assets/Scenes/Options.unity
     guid: 16a2a6f8a7706ba49ac21b1866c2b450
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: cf7aa04549487874e882ed83c1e59624
   - enabled: 1
     path: Assets/Scenes/WorldMap.unity
     guid: 1341ac783e32e6742adb4240685b944a
@@ -21,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Earth.unity
     guid: 89567297a82e80344b958a69b1a855cb
   - enabled: 1
-    path: Assets/Scenes/SplashScren.unity
-    guid: caee159e5531c2c4ba6b00e8e1912a7b
+    path: Assets/Scenes/Snow.unity
+    guid: f8e2478c58f1fc140826791611c08741
   m_configObjects: {}
