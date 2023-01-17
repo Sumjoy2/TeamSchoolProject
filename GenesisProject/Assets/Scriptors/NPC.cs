@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
 {
@@ -32,5 +33,10 @@ public class NPC : MonoBehaviour
     {
         timerDisplay = displayTime;
         dialogBox.SetActive(true);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        DisplayDialog();
     }
 }
