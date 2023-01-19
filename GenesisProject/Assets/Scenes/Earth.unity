@@ -3110,6 +3110,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5417529021952150204, guid: cd7766b1cc32a614790e3a827081a4a3, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417529021952150204, guid: cd7766b1cc32a614790e3a827081a4a3, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417529021952150204, guid: cd7766b1cc32a614790e3a827081a4a3, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6862745
+      objectReference: {fileID: 0}
     - target: {fileID: 5417529021952150206, guid: cd7766b1cc32a614790e3a827081a4a3, type: 3}
       propertyPath: m_Name
       value: QuestGiver
@@ -3120,7 +3132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5417529022963198330, guid: cd7766b1cc32a614790e3a827081a4a3, type: 3}
       propertyPath: m_fontColor.b
-      value: 0.9764706
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5417529022963198330, guid: cd7766b1cc32a614790e3a827081a4a3, type: 3}
       propertyPath: m_fontColor.g
@@ -3128,11 +3140,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5417529022963198330, guid: cd7766b1cc32a614790e3a827081a4a3, type: 3}
       propertyPath: m_fontColor.r
-      value: 0.19607843
+      value: 0.6862745
       objectReference: {fileID: 0}
     - target: {fileID: 5417529022963198330, guid: cd7766b1cc32a614790e3a827081a4a3, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4294573874
+      value: 4294967215
       objectReference: {fileID: 0}
     - target: {fileID: 5417529022963198330, guid: cd7766b1cc32a614790e3a827081a4a3, type: 3}
       propertyPath: m_HorizontalAlignment
