@@ -54,6 +54,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+GenesisProject/UserSettings/EditorUserSettings.asset
 
 # Crashlytics generated file
 crashlytics-build.properties
