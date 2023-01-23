@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public float Speed = 4.5f;
+    //Movement declairations
+    public float Speed = 4.5f; //Speed
     float horizontal;
     float vertical;
+    //Is Quest false
+    private bool IsQuest = false;
     Rigidbody2D rigidbody2d;
 
     Vector2 lookDirection = new Vector2(1, 0);
@@ -17,6 +20,7 @@ public class Player : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
+    //Scene loading
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
@@ -24,6 +28,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        //Movement things
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
@@ -40,10 +45,19 @@ public class Player : MonoBehaviour
         position.y = position.y + Speed * vertical * Time.deltaTime;
         transform.position = position;
 
+        //Return to menu after hitting ESC
         if (Input.GetKeyDown("escape"))
         {
             LoadScene("Menu");
         }
+
+        //Testing Questing Toggle
+        if(Input.GetKeyDown(KeyCode.X))
+        {
+            StartCoroutine(QuestingToggle());
+        }
+
+        //Talk to Non Player Characters
         if (Input.GetKeyDown(KeyCode.F))
         {
             RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
@@ -56,6 +70,43 @@ public class Player : MonoBehaviour
                 }
             }
         }
-
     }
+
+    //Questing Toggle. For Changing weather there is or isnt the quest active
+    IEnumerator QuestingToggle()
+    {
+        if (IsQuest == false)
+        {
+            Debug.Log("QuestStarted");
+            IsQuest = true;
+        }
+        else if (IsQuest == true)
+        {
+            Debug.Log("QuestEnded");
+            IsQuest = false;
+            yield return new WaitForSecondsRealtime(2);
+            DeltaLevel();
+        }
+    }
+
+    //For incase we want to go to next level later
+    void DeltaLevel()
+    {
+        LoadScene("Menu");
+    }
+    /*void OnTriggerEnter(Collider other)
+    {
+        if (other.Tag == "QuestGiver")
+        {
+            QuestingToggle();
+        }
+        else if (other.Tag == "QuestReceiver")
+        {
+            //QuestingToggle();
+            if (IsQuest)
+            {
+                DeltaLevel();
+            }
+        }
+    } */
 }
