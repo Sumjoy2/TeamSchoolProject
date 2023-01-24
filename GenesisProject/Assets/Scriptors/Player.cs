@@ -51,12 +51,6 @@ public class Player : MonoBehaviour
             LoadScene("Menu");
         }
 
-        //Testing Questing Toggle
-        if(Input.GetKeyDown(KeyCode.X))
-        {
-            StartCoroutine(QuestingToggle());
-        }
-
         //Talk to Non Player Characters
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -66,6 +60,7 @@ public class Player : MonoBehaviour
                 NPC character = hit.collider.GetComponent<NPC>();
                 if (character != null)
                 {
+                    QuestingToggle(); //Quest Toggle
                     character.DisplayDialog();
                 }
             }
@@ -73,19 +68,20 @@ public class Player : MonoBehaviour
     }
 
     //Questing Toggle. For Changing weather there is or isnt the quest active
-    IEnumerator QuestingToggle()
+    void QuestingToggle()
     {
-        if (IsQuest == false)
+        //Should check if NPC has tag QuestGiver
+        if (IsQuest == false && GameObject.FindWithTag("QuestGiver"))
         {
             Debug.Log("QuestStarted");
-            IsQuest = true;
+            IsQuest = !IsQuest;
         }
-        else if (IsQuest == true)
+        //Should check if NPC has tag QuestReciver
+        else if (IsQuest == true && GameObject.FindWithTag("QuestReceiver"))
         {
             Debug.Log("QuestEnded");
-            IsQuest = false;
-            yield return new WaitForSecondsRealtime(2);
-            DeltaLevel();
+            IsQuest = !IsQuest;
+            Invoke ("DeltaLevel", 2); //Loads Level after X ish seconds. X is the Number after the text
         }
     }
 
@@ -94,19 +90,4 @@ public class Player : MonoBehaviour
     {
         LoadScene("Menu");
     }
-    /*void OnTriggerEnter(Collider other)
-    {
-        if (other.Tag == "QuestGiver")
-        {
-            QuestingToggle();
-        }
-        else if (other.Tag == "QuestReceiver")
-        {
-            //QuestingToggle();
-            if (IsQuest)
-            {
-                DeltaLevel();
-            }
-        }
-    } */
 }
