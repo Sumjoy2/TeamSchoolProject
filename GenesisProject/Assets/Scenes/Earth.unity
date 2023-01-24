@@ -28116,8 +28116,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.43, y: 2.86}
-    newSize: {x: 1.43, y: 2.86}
+    oldSize: {x: 1.8, y: 2.55}
+    newSize: {x: 1.8, y: 2.55}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -28592,6 +28592,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3851914336911000284, guid: 150ed52e63bd8ff4b83908fa45204c4c, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851914336911000284, guid: 150ed52e63bd8ff4b83908fa45204c4c, type: 3}
+      propertyPath: m_Size.y
+      value: 2.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851914336911000284, guid: 150ed52e63bd8ff4b83908fa45204c4c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2167505543200044187, guid: eb960fdb7e2bdf74a84f139558d5e23c, type: 3}
     - target: {fileID: 3851914336911000284, guid: 150ed52e63bd8ff4b83908fa45204c4c, type: 3}
       propertyPath: m_SortingOrder
       value: 3
