@@ -61,7 +61,8 @@ public class Player : MonoBehaviour
                 NPC character = hit.collider.GetComponent<NPC>();
                 if (character != null)
                 {
-                    QuestingToggle(); //Quest Toggle
+                    QuestingToggle(hit); //Quest Toggle
+                    Debug.Log(hit.collider.tag);
                     character.DisplayDialog();
                 }
             }
@@ -69,16 +70,16 @@ public class Player : MonoBehaviour
     }
 
     //Questing Toggle. For Changing weather there is or isnt the quest active
-    void QuestingToggle()
+    void QuestingToggle(RaycastHit2D hit)
     {
         //Should check if NPC has tag QuestGiver
-        if (IsQuest == false && GameObject.FindWithTag("QuestGiver"))
+        if (IsQuest == false && hit.collider.tag == "QuestGiver")
         {
             Debug.Log("QuestStarted");
             IsQuest = !IsQuest;
         }
         //Should check if NPC has tag QuestReciver
-        else if (IsQuest == true && GameObject.FindWithTag("QuestReceiver"))
+        else if (IsQuest == true && hit.collider.tag == "QuestReceiver")
         {
             Debug.Log("QuestEnded");
             IsQuest = !IsQuest;

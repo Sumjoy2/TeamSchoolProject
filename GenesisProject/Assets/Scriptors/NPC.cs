@@ -20,6 +20,7 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Ticking Down Timer
         if (timerDisplay >= 0)
         {
             timerDisplay -= Time.deltaTime;
