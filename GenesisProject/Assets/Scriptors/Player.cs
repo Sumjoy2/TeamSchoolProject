@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    //using comments is weird
     //Movement declairations
     public float Speed = 4.5f; //Speed
     float horizontal;
