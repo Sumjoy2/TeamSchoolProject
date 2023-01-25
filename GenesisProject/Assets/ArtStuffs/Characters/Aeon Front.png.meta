@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -2167505543200044187
-    second: New Piskel (8)_scaled_5x_pngcrushed_0
+    second: AeonFrontFrameOne
   - first:
       213: 493208901975826428
-    second: New Piskel (8)_scaled_5x_pngcrushed_1
+    second: AeonFrontFrameTwo
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel (8)_scaled_5x_pngcrushed_0
+      name: AeonFrontFrameOne
       rect:
         serializedVersion: 2
         x: 15
@@ -141,7 +141,7 @@ TextureImporter:
         width: 180
         height: 255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,7 +154,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (8)_scaled_5x_pngcrushed_1
+      name: AeonFrontFrameTwo
       rect:
         serializedVersion: 2
         x: 225
@@ -162,7 +162,7 @@ TextureImporter:
         width: 180
         height: 255
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

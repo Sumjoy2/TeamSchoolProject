@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -6665356834582444394
-    second: New Piskel (9)_0
+    second: AeonBackFrameOne
   - first:
       213: -1496058259235209497
-    second: New Piskel (9)_1
+    second: AeonBackFrameTwo
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel (9)_0
+      name: AeonBackFrameOne
       rect:
         serializedVersion: 2
         x: 3
@@ -141,7 +141,7 @@ TextureImporter:
         width: 36
         height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,7 +154,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel (9)_1
+      name: AeonBackFrameTwo
       rect:
         serializedVersion: 2
         x: 45
@@ -162,7 +162,7 @@ TextureImporter:
         width: 36
         height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

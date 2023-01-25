@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -13,12 +15,17 @@ public class Player : MonoBehaviour
     //Is Quest false, doesnt have a quest at start
     private bool IsQuest = false;
     Rigidbody2D rigidbody2d;
+    //QuestMenu
+    public Image QuestMenu;
+    public TMP_Text QuestMenuText;
 
     Vector2 lookDirection = new Vector2(1, 0);
 
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        QuestMenu.enabled = false;
+        QuestMenuText.enabled = false;
     }
 
     //Scene loading
@@ -76,12 +83,14 @@ public class Player : MonoBehaviour
         if (IsQuest == false && hit.collider.tag == "QuestGiver")
         {
             Debug.Log("QuestStarted");
+            QuestMenu.enabled = true; QuestMenuText.enabled = true;
             IsQuest = !IsQuest;
         }
         //Should check if NPC has tag QuestReciver
         else if (IsQuest == true && hit.collider.tag == "QuestReceiver")
         {
             Debug.Log("QuestEnded");
+            QuestMenu.enabled = false; QuestMenuText.enabled = false;
             IsQuest = !IsQuest;
             Invoke ("DeltaLevel", 2); //Loads Level after X ish seconds. X is the Number after the text
         }

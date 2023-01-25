@@ -16,7 +16,7 @@ public class FootSteps : MonoBehaviour
         if ( horizontal !=0 || vertical != 0)
         {
             footstepsSound.enabled = true;
-            Debug.Log("Sonic\n");
+            //Debug.Log("Sonic\n");
         }
         else
         {
