@@ -16679,6 +16679,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -68, y: 17, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 19
+      m_TileSpriteIndex: 19
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -19, y: 17, z: 0}
     second:
       serializedVersion: 2
@@ -27519,7 +27529,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 541edefb010b8ec4f9981a7964971299, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 0c8c2eb9e084d5f4d944cd0d6daf3b2f, type: 2}
+<<<<<<< Updated upstream
   - m_RefCount: 90
+=======
+  - m_RefCount: 71
+>>>>>>> Stashed changes
     m_Data: {fileID: 11400000, guid: cf17750e8f51e23419d48eae2802449a, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 07ade757c44834848b2b059c63334f7a, type: 2}
@@ -27570,7 +27584,11 @@ Tilemap:
     m_Data: {fileID: -848561354300285403, guid: cfb37b28ac63f8d4db66d8d0876e4c5e, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 8928097699067777432, guid: cfb37b28ac63f8d4db66d8d0876e4c5e, type: 3}
+<<<<<<< Updated upstream
   - m_RefCount: 90
+=======
+  - m_RefCount: 71
+>>>>>>> Stashed changes
     m_Data: {fileID: 1764941518268613943, guid: cfb37b28ac63f8d4db66d8d0876e4c5e, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 409711093647374902, guid: cfb37b28ac63f8d4db66d8d0876e4c5e, type: 3}
@@ -27583,7 +27601,7 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 8829446353427429789, guid: a1195a6ef18f8c4429f89aabb97d534c, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 2592
+  - m_RefCount: 2593
     m_Data:
       e00: 1
       e01: 0
@@ -27602,13 +27620,18 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2592
+  - m_RefCount: 2593
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< Updated upstream
   m_Origin: {x: -19, y: -12, z: 0}
   m_Size: {x: 54, y: 49, z: 1}
+=======
+  m_Origin: {x: -68, y: -11, z: 0}
+  m_Size: {x: 103, y: 52, z: 1}
+>>>>>>> Stashed changes
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
