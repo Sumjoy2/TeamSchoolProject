@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public float Speed = 4.5f; //Speed
     float horizontal;
     float vertical;
-    //Is Quest false
+    //Is Quest false, doesnt have a quest at start
     private bool IsQuest = false;
     Rigidbody2D rigidbody2d;
 
