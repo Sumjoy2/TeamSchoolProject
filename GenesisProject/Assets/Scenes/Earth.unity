@@ -28220,7 +28220,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.006773174}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -28231,7 +28231,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.43, y: 2.86}
+  m_Size: {x: 1.43, y: 2.0065622}
   m_EdgeRadius: 0
 --- !u!114 &1874850340
 MonoBehaviour:
@@ -28894,6 +28894,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestReciver
       objectReference: {fileID: 0}
+    - target: {fileID: 629656943969628730, guid: be6309c43a03abe4b84fbece89c9b1d5, type: 3}
+      propertyPath: m_Size.x
+      value: 1.6041946
+      objectReference: {fileID: 0}
+    - target: {fileID: 629656943969628730, guid: be6309c43a03abe4b84fbece89c9b1d5, type: 3}
+      propertyPath: m_Size.y
+      value: 2.03162
+      objectReference: {fileID: 0}
+    - target: {fileID: 629656943969628730, guid: be6309c43a03abe4b84fbece89c9b1d5, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.26136875
+      objectReference: {fileID: 0}
+    - target: {fileID: 629656943969628730, guid: be6309c43a03abe4b84fbece89c9b1d5, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.16402054
+      objectReference: {fileID: 0}
+    - target: {fileID: 629656943969628731, guid: be6309c43a03abe4b84fbece89c9b1d5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5707547
+      objectReference: {fileID: 0}
+    - target: {fileID: 629656943969628731, guid: be6309c43a03abe4b84fbece89c9b1d5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8621212
+      objectReference: {fileID: 0}
+    - target: {fileID: 629656943969628731, guid: be6309c43a03abe4b84fbece89c9b1d5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6309c43a03abe4b84fbece89c9b1d5, type: 3}
 --- !u!4 &5417529021287424400 stripped
@@ -28955,6 +28983,34 @@ PrefabInstance:
     - target: {fileID: 8151172088180736537, guid: 742b17bbd9e2d48448f98834c6098051, type: 3}
       propertyPath: m_Name
       value: QuestGiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151172088180736538, guid: 742b17bbd9e2d48448f98834c6098051, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0251818
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151172088180736538, guid: 742b17bbd9e2d48448f98834c6098051, type: 3}
+      propertyPath: m_Size.y
+      value: 1.8035452
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151172088180736538, guid: 742b17bbd9e2d48448f98834c6098051, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.96804285
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151172088180736538, guid: 742b17bbd9e2d48448f98834c6098051, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.5878085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151172088180736539, guid: 742b17bbd9e2d48448f98834c6098051, type: 3}
+      propertyPath: m_Color.b
+      value: 0.990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151172088180736539, guid: 742b17bbd9e2d48448f98834c6098051, type: 3}
+      propertyPath: m_Color.g
+      value: 0.990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151172088180736539, guid: 742b17bbd9e2d48448f98834c6098051, type: 3}
+      propertyPath: m_Color.r
+      value: 0.92982376
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 742b17bbd9e2d48448f98834c6098051, type: 3}
