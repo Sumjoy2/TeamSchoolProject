@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     //Is Quest false, doesnt have a quest at start
     private bool IsQuest = false;
     Rigidbody2D rigidbody2d;
-    //QuestMenu
+    //QuestMenu stuff
     public Image QuestMenu;
     public TMP_Text QuestMenuText;
 
@@ -24,8 +24,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
-        QuestMenu.enabled = false;
-        QuestMenuText.enabled = false;
+        //Making the Quest Menu Text not visable. Verry shotty can be done better
+        QuestMenu.enabled = false; QuestMenuText.enabled = false;
     }
 
     //Scene loading
